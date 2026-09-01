@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
@@ -142,6 +142,12 @@ export function Hero() {
                     View Projects
                     <ArrowRight className="h-4 w-4" />
                   </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="gap-2 px-6">
+                  <a href="/Khant Min Htut-DEV.pdf" download>
+                    Download CV
+                    <Download className="h-4 w-4" />
+                  </a>
                 </Button>
               </motion.div>
 
