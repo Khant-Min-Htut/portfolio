@@ -8,8 +8,8 @@ const experiences = [
     company: "Connected Group",
     type: "Full-time",
     date: "Oct 2025 – Present · 1yr ",
-    location: "Remote",
-    tags: ["React", "Next.js", "Full-Stack"],
+    location: "Yangon . Remote",
+    tags: ["React", "Next.js", "Node.js", "Expres.js", "Full-Stack"],
   },
   {
     title: "Backend Developer",
