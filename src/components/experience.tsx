@@ -7,14 +7,14 @@ const experiences = [
     title: "Junior Developer",
     company: "Connected Group",
     type: "Full-time",
-    date: "Dec 2025 – Present · 10 mos",
+    date: "Oct 2025 – Present · 1yr ",
     location: "Remote",
     tags: ["React", "Next.js", "Full-Stack"],
   },
   {
     title: "Backend Developer",
     company: "MMS IT",
-    type: "Part-time",
+    type: "Full-time",
     date: "Oct 2024 – Dec 2025 · 1 yr 3 mos",
     location: "Yangon · Hybrid",
     tags: ["Website Building", "Site Development", "Backend"],
@@ -46,7 +46,14 @@ function ExperienceItem({
   index,
   isLast,
 }: {
-  item: { title: string; company: string; type: string; date: string; location: string; tags?: string[] };
+  item: {
+    title: string;
+    company: string;
+    type: string;
+    date: string;
+    location: string;
+    tags?: string[];
+  };
   index: number;
   isLast: boolean;
 }) {
@@ -54,8 +61,7 @@ function ExperienceItem({
     <motion.div
       {...fadeUp}
       transition={{ duration: 0.35, delay: 0.08 + index * 0.08 }}
-      className="relative flex gap-4"
-    >
+      className="relative flex gap-4">
       <div className="flex flex-col items-center">
         <div className="flex h-2.5 w-2.5 shrink-0 rounded-full border-2 border-primary bg-background ring-4 ring-background" />
         {!isLast && <div className="w-px flex-1 bg-border/60" />}
@@ -73,8 +79,7 @@ function ExperienceItem({
             {item.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-md border border-border/50 bg-secondary/30 px-2 py-0.5 font-mono text-[11px] text-muted-foreground"
-              >
+                className="rounded-md border border-border/50 bg-secondary/30 px-2 py-0.5 font-mono text-[11px] text-muted-foreground">
                 {tag}
               </span>
             ))}
@@ -98,8 +103,7 @@ function EducationItem({
     <motion.div
       {...fadeUp}
       transition={{ duration: 0.35, delay: 0.08 + index * 0.08 }}
-      className="relative flex gap-4"
-    >
+      className="relative flex gap-4">
       <div className="flex flex-col items-center">
         <div className="flex h-2.5 w-2.5 shrink-0 rounded-full border-2 border-primary bg-background ring-4 ring-background" />
         {!isLast && <div className="w-px flex-1 bg-border/60" />}
@@ -119,7 +123,9 @@ function EducationItem({
 
 export function Experience() {
   return (
-    <section id="experience" className="border-t border-border/50 py-24 sm:py-32">
+    <section
+      id="experience"
+      className="border-t border-border/50 py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-5xl">
           {/* Section Header */}
@@ -128,8 +134,7 @@ export function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.4 }}
-            className="mb-16 text-center"
-          >
+            className="mb-16 text-center">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
               Experience & Education
             </p>
@@ -146,8 +151,7 @@ export function Experience() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.35 }}
-                className="mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground"
-              >
+                className="mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 Experience
               </motion.h3>
               <div>
@@ -169,8 +173,7 @@ export function Experience() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.35, delay: 0.08 }}
-                className="mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground"
-              >
+                className="mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 Education
               </motion.h3>
               <div>
