@@ -9,7 +9,7 @@ const experiences = [
     type: "Full-time",
     date: "Oct 2025 – Present · 1yr ",
     location: "Yangon . Remote",
-    tags: ["React", "Next.js", "Node.js", "Expres.js", "Full-Stack"],
+    tags: ["React", "Next.js", "Node.js", "Express.js", "Full-Stack"],
   },
   {
     title: "Backend Developer",
