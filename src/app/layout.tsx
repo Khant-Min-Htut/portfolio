@@ -36,7 +36,6 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
     apple: "/me.jpg",
-    appleTouchIcon: "/me.jpg",
   },
   openGraph: {
     title: "Khant Min Htut | Full-Stack Developer",
